@@ -57,3 +57,5 @@ const NewList = ({navigation}) => {
       fontSize: 14,
     },
   });
+
+  export default NewList;

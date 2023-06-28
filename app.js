@@ -5,3 +5,23 @@ import NewList from './src/NewList';
 import NewsDetails from './src/NewsDetail';
 
 const Stack = createNativeStackNavigator();
+
+function App() {
+    return (
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="NewList"
+            component={NewList}
+            options={{title: 'ultimas noticias'}}
+          />
+          <Stack.Screen
+            name="NewsDetailst"
+            component={NewsDetails}
+            options={{title: 'Detalees de noticias'}}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    );
+  }
+  export default App;
